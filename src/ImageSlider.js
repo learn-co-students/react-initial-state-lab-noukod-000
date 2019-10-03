@@ -9,7 +9,20 @@ export default class ImageSlider extends Component {
       currentSlideIndex: 0
     };  
   }
+
+  increment = () => {
+    const newSlide = this.state.currentSlideIndex + 1
+    this.setState({
+      currentSlideIndex: newSlide
+    })
+  }
   
+  render () {
+    <div>
+      I am on slide {this.state.currentSlideIndex}
+    </div>
+  }
   
 }
 
+export default ImageSlider
